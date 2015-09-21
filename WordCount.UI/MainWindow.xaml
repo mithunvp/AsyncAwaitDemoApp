@@ -1,0 +1,45 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WordCount.UI"
+        xmlns:WordCountLib="clr-namespace:WordCountLib;assembly=WordCountLib" x:Class="WordCount.UI.MainWindow"
+        mc:Ignorable="d"
+        Title="Async Await Demo" Height="600" Width="825" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Button x:Name="btndwn" Content="Search Words" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Width="127" Height="38" Click="btndwn_Click" FontSize="16"/>
+        <TextBox x:Name="logtxtBlock" HorizontalAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Top" Height="301" Width="220" />        
+        <Label x:Name="label" Content="Word Occurrences" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.385,-0.626" Width="422" FontSize="26.667"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Margin="10,153,0,0" VerticalAlignment="Top" FontSize="14" Visibility="Collapsed">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Content="{Binding WordName}" FontWeight="Bold"  />
+                        <Label Grid.Column="1" Content="{Binding NoOfOccurance }" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ListBox x:Name="listBoxasync" HorizontalAlignment="Left" Margin="310,153,0,0" VerticalAlignment="Top" FontSize="14" Visibility="Collapsed" Background="LightGray">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="4">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Label Content="{Binding WordName}" FontWeight="Bold"  />
+                        <Label Grid.Column="1" Content="{Binding NoOfOccurance }" />
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button x:Name="btndwnasyn" Click="btndwnasyn_Click" Content="Search Words Async Way" HorizontalAlignment="Left" Margin="172,55,0,0" VerticalAlignment="Top" Width="188" Height="38" FontSize="16"/>
+
+    </Grid>
+</Window>

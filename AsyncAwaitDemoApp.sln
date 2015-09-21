@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{8282A89E-3CB2-4953-B33F-A99FB7B8AED4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCountLib", "WordCountLib\WordCountLib.csproj", "{B523BDA0-A7CD-4BF1-ADD6-93B86CCABE48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCount.UI", "WordCount.UI\WordCount.UI.csproj", "{61A7416F-B9F9-47E9-A265-441AC05469B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WPF", "WPF", "{B9936B9B-4077-498A-9A6E-E8780392F5BB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B523BDA0-A7CD-4BF1-ADD6-93B86CCABE48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B523BDA0-A7CD-4BF1-ADD6-93B86CCABE48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B523BDA0-A7CD-4BF1-ADD6-93B86CCABE48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B523BDA0-A7CD-4BF1-ADD6-93B86CCABE48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61A7416F-B9F9-47E9-A265-441AC05469B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61A7416F-B9F9-47E9-A265-441AC05469B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61A7416F-B9F9-47E9-A265-441AC05469B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61A7416F-B9F9-47E9-A265-441AC05469B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B523BDA0-A7CD-4BF1-ADD6-93B86CCABE48} = {8282A89E-3CB2-4953-B33F-A99FB7B8AED4}
+		{61A7416F-B9F9-47E9-A265-441AC05469B4} = {B9936B9B-4077-498A-9A6E-E8780392F5BB}
+	EndGlobalSection
+EndGlobal
